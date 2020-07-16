@@ -4,14 +4,14 @@ export default class BT3SildeBar extends Component {
     render() {
         return (
             <div>
-               {/* <div className="col-lg-3">
+               <div className="col-lg-3 pt-5">
   <h1 className="my-4">Shop Name</h1>
   <div className="list-group">
     <a href="#" className="list-group-item">Category 1</a>
     <a href="#" className="list-group-item">Category 2</a>
     <a href="#" className="list-group-item">Category 3</a>
   </div>
-</div> */}
+</div>
 
             </div>
         )
