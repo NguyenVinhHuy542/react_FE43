@@ -9,16 +9,14 @@ import Evenbinding from './EvenBinding/Evenbinding';
 import RenderwithStale from './RenderWithStale/renderwithStale';
 import Baitapchonxe from './RenderWithStale/Baitapchonxe';
 import RenderMap from './RenderMap/RenderMap';
+import BT3DanLayout from './Components/BT3DanLayout/BT3DanLayout';
 
 // App như hàm main: mọi component đều hiển thị qua App
 function App() {
   return (
     <div className="App">
-      {/* <Baitapchonxe></Baitapchonxe> */}
-      <RenderMap></RenderMap>
-      {/* <RenderwithStale></RenderwithStale> */}
-     {/* <Evenbinding></Evenbinding> */}
-      {/* <Databinding></Databinding> */}
+      <BT3DanLayout></BT3DanLayout>
+      
     </div>
   )
 }
