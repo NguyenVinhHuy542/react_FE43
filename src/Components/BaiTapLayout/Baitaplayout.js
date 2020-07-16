@@ -7,6 +7,7 @@ import BTbackground from './BTbackground'
 import BTsmartphone from './BTsmartphone'
 import BTlaptop from './BTlaptop'
 import BTpromo from './BTpromo'
+import BTsmartphoneitem from './BTsmartphoneitem'
 
 export default class Baitaplayout extends Component {
     // Nội dung react component chứa phương thức "render"
@@ -19,6 +20,7 @@ export default class Baitaplayout extends Component {
                 <BTsmartphone></BTsmartphone>
                 <BTlaptop></BTlaptop>
                 <BTpromo></BTpromo>
+                <BTsmartphoneitem/>
             </div>
         )
     }

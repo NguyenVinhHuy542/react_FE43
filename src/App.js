@@ -11,12 +11,17 @@ import Baitapchonxe from './RenderWithStale/Baitapchonxe';
 import RenderMap from './RenderMap/RenderMap';
 import BT3DanLayout from './Components/BT3DanLayout/BT3DanLayout';
 import BTGlassLayout from './Components/BaiTapGlass/BTGlassLayout';
+import Demoprops from './Components/DemoProps/Demoprops';
 
 // App như hàm main: mọi component đều hiển thị qua App
 function App() {
   return (
     <div className="App">
-      <BTGlassLayout></BTGlassLayout>
+      <Baitaplayout/>
+      {/* <BT2layout/> */}
+      {/* <Databinding/> */}
+      {/* <Demoprops/> */}
+      {/* <BTGlassLayout></BTGlassLayout> */}
       {/* <BT3DanLayout></BT3DanLayout> */}
       
     </div>
