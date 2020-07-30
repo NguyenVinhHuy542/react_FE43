@@ -1,0 +1,35 @@
+.bau-cua__do {
+    position: relative;
+  }
+  .bau-cua__do .bau-cua__xoay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 0px 53px 4px rgba(0, 0, 0, 0.75);
+    background-color: #032f62;
+  }
+  .bau-cua__do .bau-cua__xoay--1 {
+    transform: translateX(-110%);
+  }
+  .bau-cua__do .bau-cua__xoay--2 {
+    transform: translate(0%);
+  }
+  .bau-cua__do .bau-cua__xoay--3 {
+    transform: translate(-50%, -110%);
+  }
+  .bau-cua__do .bau-cua__xoay img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .bau-cua__danhSachXucXac {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  
+  .bau-cua__bang .col-4 {
+    position: relative;
+  }
+  
