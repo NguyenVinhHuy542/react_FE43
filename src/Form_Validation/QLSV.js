@@ -12,7 +12,14 @@ class QLSV extends Component {
                 <td>{nguoiDung.email}</td>
                 <td>{nguoiDung.soDt}</td>
                 <td>{nguoiDung.maNhom}</td>
-                <td></td>
+                <td>
+                    <button onClick={() => {
+                        this.props.dispatch({ type: 'CHINH_SUA', nguoiDung })
+                    }} className="btn btn-primary">Chỉnh sửa</button>
+                    <button onClick={() => {
+                        this.props.dispatch({ type: 'XOA', index })
+                    }} className="btn btn-danger">XÓA</button>
+                </td>
             </tr>
         })
     }
@@ -23,17 +30,21 @@ class QLSV extends Component {
                 <table className="table">
                     <thead>
                         <tr>
-                            <th>Tài Khoản</th>
-                            <th>Mật Khẩu</th>
-                            <th>Họ Tên</th>
-                            <th>Email</th>
-                            <th>Số Điện thoại</th>
-                            <th>Mã Nhóm</th>
-                            <th></th>
+                            <td>Tài Khoản</td>
+                            <td>Mật Khẩu</td>
+                            <td>Họ Tên</td>
+                            <td>Email</td>
+                            <td>Số Điện tdoại</td>
+                            <td>Mã Nhóm</td>
+                            <td>
+
+                            </td>
                         </tr>
+
                     </thead>
                     <tbody>
                         {this.renderTable()}
+
                     </tbody>
                 </table>
             </div>
@@ -42,7 +53,8 @@ class QLSV extends Component {
 }
 function mapStateToProps(state) {
     return {
-        mangNguoiDung: state.QLSVReducer.mangNguoiDung
+        mangNguoiDung: state.QLSVReducer.mangNguoiDung,
+
     }
 }
 // function mapStateToProps = (state) =>{}
