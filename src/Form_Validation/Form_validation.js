@@ -109,14 +109,15 @@ class Form_validation extends Component {
     //     }
     //     return null;
     // }
-    // CÁCH SET CŨ:
-    componentWillReceiveProps(newProps) {
-        // // CHạy sau khi nhận props mới và trước khi render =>trả về state mới
-        //  Lưu ý : sẽ Warning đối với react 16 trở đi
-        this.setState({
-            values: newProps.nguoiDungEdit
-        })
-    }
+
+    // CÁCH SET CŨ: (Tương lai không ổn định)
+        // componentWillReceiveProps(newProps) {
+        // // // CHạy sau khi nhận props mới và trước khi render =>trả về state mới
+        // //  Lưu ý : sẽ Warning đối với react 16 trở đi
+        // this.setState({
+        //     values: newProps.nguoiDungEdit
+        // })
+    // }
     render() {
         // Lấy về props người dùng từ state reducer 
         // let{taiKhoan, email, hoTen, matKhau, soDt,maNhom} = this.props.nguoiDungEdit
@@ -183,6 +184,16 @@ class Form_validation extends Component {
 
 
         )
+    }
+    // prevProps: là props trước khi render
+    // prevState : là state trước khi render
+    componentDidUpdate(prevProps, prevState){
+        if(!_.isEqual(prevProps.nguoiDungEdit,this.props.nguoiDungEdit)){
+            // Chỉ setstate khi người dùng bấm nút chỉnh sửa
+            this.setState({
+                values:this.props.nguoiDungEdit
+            })
+        }
     }
 }
 const mapStateToProps = state => {

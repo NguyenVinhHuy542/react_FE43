@@ -19,6 +19,8 @@ import GameTaiXiu from './GameTaiXiu';
 import Form_validation from './Form_Validation/Form_validation';
 import QLSV from './Form_Validation/QLSV';
 import ReactLifeCycle from './ReactLifeCycle/ReactLifeCycle';
+import PureComponentDemo from './PureComponentDemo/PureComponentDemo';
+import AjaxAPI from './AjaxApi./AjaxAPI';
 
 // App như hàm main: mọi component đều hiển thị qua App
 function App() {
@@ -36,8 +38,10 @@ function App() {
       {/* <GameBauCua /> */}
       {/* <GameTaiXiu /> */}
       {/* <Form_validation/> */}
-      <QLSV/>
+      {/* <QLSV/> */}
       {/* <ReactLifeCycle/> */}
+      {/* <PureComponentDemo/> */}
+      <AjaxAPI/>
     </div>
   )
 }

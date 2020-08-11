@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 //Kết nội redux với react (setup)
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './redux/reducers/rootReducer';
-
+import reduxThunk from 'redux-thunk'
 const reduxStore = createStore(
-  rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  rootReducer, 
+  applyMiddleware(reduxThunk)
+
 );
 
 ReactDOM.render(
